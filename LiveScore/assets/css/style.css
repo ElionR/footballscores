@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Rubik:wght@500&display=swap');
+
+@font-face {
+    font-family:Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+:root {
+    --section-bg:#111111;
+    --menu-item-col:#000;
+    --orange-col:#FF5E0A;
+    --menu-item-hover:#AAAAAA;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+table img{
+    width: 18px;
+    height: 18px;
+    align-items: center;
+}
+header {
+    width: 100%;
+    position: fixed;
+    padding:20px 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+header #logo h1{
+    font-weight: bold;
+}
+
+header #logo h1::before{
+    content: "Live";
+    color: var(--orange-col);
+}
+
+header nav ul {
+    font-family: Roboto;
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin:0px 20px;
+}
+
+header nav ul li.active {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--menu-item-col);
+}
+
+header nav ul li a:hover {
+    transition: .5s;
+    opacity: .7;
+}
+
+section {
+    background-color: var(--section-bg);
+    padding: 0px 60px;
+}
+
+section h1 {
+    font-size: 38px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Roboto;
+    margin:50px 0px;
+}
+
+/* Hero section  - home */
+#home {
+    height: 50vh;
+    padding:250px 0px 150px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+#home h1, #home h3{
+    color: white;
+    font-family: Roboto;
+    line-height: 50px;
+    font-size: 28px;
+    margin: 0px;;
+}
+
+#home a {
+    background-color: var(--orange-col);
+    color: #fff;
+    padding:10px 5px;
+    text-decoration: none;
+    border-radius: 2px;
+    margin:20px 0px;
+    font-family: Roboto;
+}
+
+/* Matches*/
+#matches {
+    padding:120px 60px;
+}
+
+/*hover*/
+.leagueH{
+    color:#FF5E0A;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+  }
+ .standings{
+    max-width: 10px;
+    text-align: center;
+
+ }
+
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #3a3939;
+  }
+
+
+/* Blog Section */
+#blog {
+    padding:120px 60px;
+}
+
+.blogContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.singleBlog {
+    max-width: 400px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow:#ff600a93 5px 5px, #ff600a62 10px 10px, #ff600a54 15px 15px, #ff600a2c 20px 20px;
+}
+
+.singleBlog img {
+    max-width: 400px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.singleBlog p {
+    padding:10px;
+}
+
+/* Newsletter */
+
+#newsletter {
+    background-color: var(--orange-col);
+}
+
+    
+
+
+#newsletter h1 {
+    margin: 0px;
+    padding:50px 0px 0px 0px;
+    text-align: center;
+}
+
+#newsletter .container{
+    padding:60px 120px 100px 120px;
+    display: flex;
+    justify-content: center;
+}
+
+#newsletter input[type="text"] {
+    width: 100%;
+    max-width: 700px;
+    margin: 0px 10px;
+    padding:10px;
+    border:none;
+    outline: none;
+    border-radius: 4px;
+    font-family: Roboto;
+}
+
+#newsletter input[type="submit"] {
+    padding:10px 20px;
+    border:none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+#newsletter2:hover{
+    background-color: #111111;
+    color: #FF5E0A;
+    border: #FF5E0A solid 0.5px;
+    }
+
+/* Footer */
+
+footer {
+    background-color: var(--section-bg);
+    padding:20px 0px;
+    font-family: Roboto;
+    color: #fff;
+    text-align: center;
+}
+
+/*change leagues*/
+#leaguesChange{
+display: inline;
+background-color: #FF5E0A;
+    color: #FF5E0A;
+}
+#ligaLogo{
+    width: 80px;
+    height: 80px;
+background-color: white;
+padding:0.5%;
+margin: 25px;
+
+}
+#ligaLogo:hover{
+    width: 100px;
+    height: 100px;
+    background-color: #FF5E0A;
+   transition:ease-in-out .5s;
+    border: 1px solid #ccc;
+
+}
